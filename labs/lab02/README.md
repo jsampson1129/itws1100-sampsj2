@@ -1,0 +1,1 @@
+This was a good lab that provided useful knowledge about formatting in HTML and CSS and also allowed students to develop a resume to use at the career center, good ideas all around.
