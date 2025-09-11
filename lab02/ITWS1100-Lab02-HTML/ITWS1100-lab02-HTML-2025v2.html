@@ -1,0 +1,115 @@
+<!--
+  ITWS1100 Lab 02 HTML/CSS Instructions (2025v2)
+  ------------------------------------------------
+  This HTML file combines DevOps setup (from README.md) and lab instructions (from previous HTML).
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Lab 02: HTML/CSS Resume Project - ITWS1100 (2025v2)</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--
+    Link to the external CSS file for all styles.
+    This demonstrates best practice for separating content and presentation.
+  -->
+   <link rel="stylesheet" href="../../resource/ITWS1100-labs-2025v2.css">
+</head>
+
+<body>
+   <div class="lab-container">
+      <!-- Header section with lab icon and title -->
+      <header>
+         <img src="../../resource/images/itws_logo_globe_bw.png" alt="Lab Icon">
+         <div>
+            <h1>Lab 02: Build Your Resume in HTML &amp; CSS</h1>
+            <div class="highlight">Course: ITWS1100 &mdash; Fall 2025</div>
+         </div>
+      </header>
+
+      <!-- DevOps and setup instructions for students -->
+      <h2>DevOps &amp; Lab Setup</h2>
+      <ol>
+         <li>In Lab 1, you cloned your GitHub repository to your local machine. This folder should be named
+            <code>iit</code> (or your repo name).
+         </li>
+         <li>In the <code>iit</code> folder, create a new folder called <code>labs</code>.</li>
+         <li>Inside <code>labs</code>, create a folder named <code>lab01</code> (for Lab 1) and <code>lab02</code> (for
+            this lab).</li>
+         <li>Download the zip file for Lab 02 from LMS to your downloads (or other) folder. <strong>Do not</strong> put
+            the zip file inside your <code>iit</code> folder.</li>
+         <li>Unzip the lab02 files into <code>iit/labs/lab02/</code>.</li>
+         <li>Move your <code>lab1</code> folder from last week into <code>labs/</code> as well.</li>
+         <li>Open your <code>iit</code> folder in VS Code using GitHub Desktop.</li>
+         <li>As you make changes, GitHub Desktop will show them in the left panel.</li>
+         <li>To test your code locally, install the Live Preview extension (<code>ms-vscode.live-server</code>).</li>
+         <li>Commit your changes in GitHub Desktop and push to your GitHub repository when ready.</li>
+         <li>To deploy to your web server:
+            <ul>
+               <li>Start your Azure instance(s).</li>
+               <li>Pull your changes down to your web server(s).</li>
+               <li>Test your resume at <code>FQDN/iit/labs/lab02</code>.</li>
+            </ul>
+         </li>
+      </ol>
+
+      <!-- Main lab instructions for students -->
+      <h2>Lab Instructions</h2>
+      <ol>
+         <li>Review the provided HTML resume templates and example:
+            <ul>
+               <li><a href="./Intro ITWS - Lab 2 - HTML - template.html" rel="noopener">Template 1 - Starter</a></li>
+               <li><a href="Lab02-SampleResume2025.html" rel="noopener">Template 2 - Basic</a></li>
+               <li><a href="Lab02-SampleResumeFlexBox2025.html" rel="noopener">Template 3 - Flexbox</a></li>
+               <li><a href="Lab02-SampleResumeGrid2025.html" rel="noopener">Template 4 - Grid</a></li>
+               <li><a href="Intro ITWS - Lab 2 - HTML - Example Resume.gif" rel="noopener">Example Resume</a></li>
+            </ul>
+         </li>
+         <li>Rename <code>Intro ITWS - Lab 2 - HTML - template.html</code> to
+            <code>yourRCSID-FullName-resume.html</code>.
+         </li>
+         <li>Review the <a href="README.md" rel="noopener">README.md</a> file and follow its guidelines.</li>
+         <li>Edit your HTML file to create your resume. Enter your own information and make your best effort; you can
+            update and correct details later.</li>
+         <li>After submitting your lab, you will take your resume to the career center for review—so make it good!</li>
+      </ol>
+
+      <!-- Guidelines for students to follow -->
+      <h2>Guidelines</h2>
+      <ul>
+         <li>Name your file: <code>yourRCSID-FullName-resume.html</code></li>
+         <li>Keep your code in one document. Your CSS should be embedded or linked externally.</li>
+         <li>Do <strong>not</strong> use tables for layout. Use semantic HTML and CSS (Flexbox/Grid encouraged).</li>
+         <li>Use proper indentation and valid markup (see HTML/CSS lecture notes).</li>
+         <li>Use online resources for reference:
+            <ul>
+               <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+               <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">HTML Validator</a></li>
+               <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">CSS Validator</a></li>
+            </ul>
+         </li>
+         <li>You will be graded based on the <a href="Intro ITWS - Lab 2 - HTML - Rubric.html" rel="noopener">Lab 2
+               rubric</a>.</li>
+      </ul>
+
+      <!-- Submission instructions for students -->
+      <h2>Submission</h2>
+      <ol>
+         <li>This lab is due by the date specified in LMS.</li>
+         <li>Create a <code>README.md</code> file in your <code>lab02</code> folder with any comments/observations about
+            the lab.</li>
+         <li>Zip your local repo and submit to LMS before the deadline.</li>
+         <li>Commit and push your edits to GitHub, and deploy them to your web server (see the README for details).</li>
+         <li>Take your resume to the career center for review.</li>
+      </ol>
+
+      <!-- Teaching tip for students -->
+      <div class="highlight important">
+         <span>Tip:</span> Be creative! This resume will be a template for your job search—make it stand out!
+      </div>
+   </div>
+</body>
+
+</html>
