@@ -34,6 +34,11 @@
       "title": "Lab 8 – JSON & AJAX",
       "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/",
       "description": "Dynamic projects page using JSON + AJAX"
+    },
+    {
+      "title": "Lab 9 – SQL",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab09/inclassexample/movies.php",
+      "description": "Movies and Actors SQL"
     }
   ]
 }
