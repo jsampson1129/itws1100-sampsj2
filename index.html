@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Labs & Projects - Jack Sampson</title>
-    <link rel="stylesheet" href="C:\Users\jacka\OneDrive\Documents\GitHub\itws1100-sampsj2\css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Jack Sampson</title>
+  
+  <!-- jQuery + jQuery UI from CDN (for jazz!) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <!-- Header -->
@@ -29,19 +36,18 @@
 							</ul>
 						</nav>
 					</header>
-    <main>
-		<h1>Jack Sampson</h1>
-    <h2>ITWS HTML Webpage</h2>
-        <h1>My ITWS Labs & Projects</h1>
-        <ul>
-            <li><a href="labs/lab02/sampsj2-JackSampson-resume.html">View My ResumeLab 02 - Resume Website</a></li>
-            <li>Lab 03 - Information Architecture</li>
-			<li><a href="labs/lab04/index.html">Lab 04 - RSS&Atom</a></li>
-			<li><a href="labs/lab05/lab5.html">Lab 05 - JavaScript</a></li>
-			<li><a href="labs/lab06/lab6.html">Lab 06 - Student Distribution</a></li>
-        </ul>
-	><h5><p><a href="rss.xml">Subscribe to my RSS feed</a></p></h5>
-    </main>
+    <main class="container">
+    <h1>My ITWS Projects</h1>
+    <p>Loading projects dynamically with JSON + AJAX...</p>
+
+    <div id="loading" style="text-align:center; margin:30px;">
+      <img src="https://i.imgur.com/8Rm5IQo.gif" alt="Loading...">
+    </div>
+
+    <ul id="projects-list"></ul>
+  </main>
+
+  <script src="js/projects.js"></script>
 
       <footer id="footer">
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>

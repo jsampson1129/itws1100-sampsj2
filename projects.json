@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "title": "Lab 1 – Personal Website",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/",
+      "description": "My personal introduction and branding"
+    },
+    {
+      "title": "Lab 2 – Resume Website",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab02/sampsj2-JackSampson-resume.html",
+      "description": "Professional resume with HTML & CSS"
+    },
+    {
+      "title": "Lab 3 – Information Architecture",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/",
+      "description": "Multi-page site with proper navigation"
+    },
+    {
+      "title": "Lab 4 – RSS Feed",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab04/index.html",
+      "description": "Valid RSS 2.0 feed with styling"
+    },
+    {
+      "title": "Lab 5 – Form Validation",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab05/lab5.html",
+      "description": "JavaScript form with real-time validation"
+    },
+    {
+      "title": "Lab 6 – jQuery Interactive Lab",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab06/lab6.html",
+      "description": "5 jQuery problems with event delegation"
+    },
+    {
+      "title": "Lab 8 – JSON & AJAX (this one!)",
+      "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/",
+      "description": "Dynamic projects page using JSON + AJAX"
+    }
+  ]
+}
