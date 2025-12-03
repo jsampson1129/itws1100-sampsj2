@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <title>ITWS1100 Lab 6 : Enhanced jQuery Learning Lab</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- jQuery Library -->
+   <script type="text/javascript" src="resources/jquery-3.6.1.min.js"></script>
+   <!-- Framework JavaScript (instructional support) -->
+   <script type="text/javascript" src="lab6-framework.js"></script>
+   <!-- Student JavaScript (your code goes here) -->
+   <script type="text/javascript" src="lab6.js"></script>
+   <!-- CSS Styling -->
+   <link rel="stylesheet" href="lab6.css" type="text/css" />
+</head>
+
+<body>
+   <div id="bodyBlock">
+
+      <!-- Progress Tracker -->
+      <div id="progressTracker">
+         <h2>Lab Progress</h2>
+         <div class="progress-container">
+            <div class="progress-item" id="progress-1">
+               <span class="progress-number">1</span>
+               <span class="progress-text">Name & Styling</span>
+               <span class="progress-status">⏳</span>
+            </div>
+            <div class="progress-item" id="progress-2">
+               <span class="progress-number">2</span>
+               <span class="progress-text">Text Animation</span>
+               <span class="progress-status">⏳</span>
+            </div>
+            <div class="progress-item" id="progress-3">
+               <span class="progress-number">3</span>
+               <span class="progress-text">List Interaction</span>
+               <span class="progress-status">⏳</span>
+            </div>
+            <div class="progress-item" id="progress-4">
+               <span class="progress-number">4</span>
+               <span class="progress-text">Dynamic Content</span>
+               <span class="progress-status">⏳</span>
+            </div>
+            <div class="progress-item" id="progress-5">
+               <span class="progress-number">5</span>
+               <span class="progress-text">Event Delegation</span>
+               <span class="progress-status">⏳</span>
+            </div>
+         </div>
+      </div>
+
+      <!-- Help and Tips Section -->
+      <div id="helpSection">
+         <button type="button" id="toggleHelp">Show/Hide Tips & Help</button>
+         <div id="helpContent" style="display: none;">
+            <h3>jQuery Quick Reference</h3>
+            <ul>
+               <li><code>$(selector).click(function)</code> - Add click event handler</li>
+               <li><code>$(selector).text('new text')</code> - Change text content</li>
+               <li><code>$(selector).css('property', 'value')</code> - Change CSS</li>
+               <li><code>$(selector).addClass('className')</code> - Add CSS class</li>
+               <li><code>$(selector).removeClass('className')</code> - Remove CSS class</li>
+               <li><code>$(selector).toggleClass('className')</code> - Toggle CSS class</li>
+               <li><code>$(selector).hide(duration)</code> - Hide with animation</li>
+               <li><code>$(selector).show(duration)</code> - Show with animation</li>
+               <li><code>$(selector).append('content')</code> - Add content to end</li>
+               <li><code>$(document).on('event', 'selector', function)</code> - Event delegation</li>
+            </ul>
+            <p><strong>Debugging Tips:</strong></p>
+            <ul>
+               <li>Open Developer Tools (F12) to see console messages</li>
+               <li>Use <code>console.log()</code> to debug your code</li>
+               <li>Check the Console tab for errors</li>
+               <li>Use <code>$(selector).length</code> to verify elements exist</li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Submission Requirements -->
+      <div id="submissionRequirements" class="info-section">
+         <h2>📋 IMPORTANT: Submission Requirements</h2>
+         <div class="requirements-grid">
+            <div class="requirement-box git">
+               <h3>🔧 Git Workflow</h3>
+               <ol>
+                  <li>Create branch: <code>git checkout -b lab6</code></li>
+                  <li>Complete all 5 problems</li>
+                  <li>Commit: <code>git add . && git commit -m "Complete Lab 6"</code></li>
+                  <li>Merge: <code>git checkout main && git merge lab6</code></li>
+                  <li>Push: <code>git push origin main</code></li>
+               </ol>
+            </div>
+            <div class="requirement-box deploy">
+               <h3>🌐 Deployment</h3>
+               <ul>
+                  <li>Deploy to your Azure Web App</li>
+                  <li>Test all problems on live site</li>
+                  <li>Update your website's landing page</li>
+                  <li>Add Lab 6 link to navigation</li>
+               </ul>
+            </div>
+            <div class="requirement-box submit">
+               <h3>📁 LMS Submission</h3>
+               <ul>
+                  <li>Update repository README.md</li>
+                  <li>ZIP entire repository folder</li>
+                  <li>Submit ZIP to LMS</li>
+                  <li>Include live site URL in submission</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <!-- Main Lab Content -->
+      <div id="mainContent">
+
+         <!-- Problem 1 Section -->
+         <section class="problem-section" data-problem="1">
+            <h2>Problem 1: Personal Information & Styling
+               <span class="difficulty beginner">Beginner</span>
+               <span class="time-estimate">~5 minutes</span>
+            </h2>
+
+            <div class="problem-description">
+               <p><strong>Goal:</strong> When someone clicks the heading below, replace "Your Name" with your actual
+                  name and apply custom styling.</p>
+               <p><strong>Requirements:</strong></p>
+               <ul>
+                  <li>Change "Your Name" to your actual name</li>
+                  <li>Apply small caps text transformation</li>
+                  <li>Change color (not blue or black)</li>
+                  <li>Set font size to 200% of normal</li>
+               </ul>
+               <p><strong>Hint:</strong> Look at the existing <code>.myName</code> class in the CSS file!</p>
+            </div>
+
+            <h1 id="nameHeading">Lab 6: <em class="myName">Your Name</em></h1>
+            <button type="button" class="check-work" data-problem="1">Check Problem 1</button>
+         </section>
+
+         <!-- Problem 2 Section -->
+         <section class="problem-section" data-problem="2">
+            <h2>Problem 2: Text Animation
+               <span class="difficulty beginner">Beginner</span>
+               <span class="time-estimate">~7 minutes</span>
+            </h2>
+
+            <div class="problem-description">
+               <p><strong>Goal:</strong> Create smooth show/hide animations for the lorem ipsum text.</p>
+               <p><strong>Requirements:</strong></p>
+               <ul>
+                  <li>"Hide Text" button: Make paragraphs vanish over 2 seconds</li>
+                  <li>"Show Text" button: Make paragraphs appear over 3.3 seconds</li>
+                  <li>"Toggle Text" button: Switch between show/hide</li>
+               </ul>
+               <p><strong>Methods to use:</strong> <code>.hide()</code>, <code>.show()</code>, <code>.toggle()</code>
+               </p>
+            </div>
+
+            <div id="showHideBlock">
+               <div id="showHideLinks">
+                  <a href="#" id="toggleText">Toggle Text</a>
+                  <a href="#" id="hideText">Hide Text</a> |
+                  <a href="#" id="showText">Show Text</a>
+               </div>
+               <div id="textContent">
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                     ullamcorper metus sit amet velit ultrices quis congue nisl mollis.
+                     Proin nec orci eget nisl vehicula elementum. Vestibulum ante ipsum
+                     primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                     Phasellus lacinia dui sed diam tempor volutpat.
+                  </p>
+                  <p>
+                     Nunc vel lectus a mi suscipit cursus vitae vel metus. Ut vitae mauris
+                     sed magna malesuada facilisis quis at urna. Fusce sit amet ullamcorper
+                     lectus. Proin interdum orci et est cursus consectetur convallis mauris
+                     placerat. Duis bibendum felis vel sapien auctor consequat.
+                  </p>
+               </div>
+            </div>
+            <button type="button" class="check-work" data-problem="2">Check Problem 2</button>
+         </section>
+
+         <!-- Problem 3 Section -->
+         <section class="problem-section" data-problem="3">
+            <h2>Problem 3: Interactive List Items
+               <span class="difficulty intermediate">Intermediate</span>
+               <span class="time-estimate">~8 minutes</span>
+            </h2>
+
+            <div class="problem-description">
+               <p><strong>Goal:</strong> Make list items change color when clicked.</p>
+               <p><strong>Requirements:</strong></p>
+               <ul>
+                  <li>Click normal list item → turns red</li>
+                  <li>Click red list item → back to normal</li>
+                  <li>Use the existing <code>.red</code> CSS class</li>
+               </ul>
+               <p><strong>Methods to use:</strong> <code>.addClass()</code>, <code>.removeClass()</code>, or
+                  <code>.toggleClass()</code>
+               </p>
+            </div>
+
+            <ul id="labList">
+               <li>List item 1 - Click me!</li>
+               <li>List item 2 - Click me!</li>
+               <li>List item 3 - Click me!</li>
+               <li>List item 4 - Click me!</li>
+               <li>List item 5 - Click me!</li>
+            </ul>
+            <button type="button" class="check-work" data-problem="3">Check Problem 3</button>
+         </section>
+
+         <!-- Problem 4 Section -->
+         <section class="problem-section" data-problem="4">
+            <h2>Problem 4: Dynamic Content Creation
+               <span class="difficulty intermediate">Intermediate</span>
+               <span class="time-estimate">~6 minutes</span>
+            </h2>
+
+            <div class="problem-description">
+               <p><strong>Goal:</strong> Add new list items dynamically.</p>
+               <p><strong>Requirements:</strong></p>
+               <ul>
+                  <li>When "Add List Item" is clicked, add a new item to the end of the list</li>
+                  <li>Each new item should have a unique number</li>
+                  <li>Include encouraging text like "New item X - Click me!"</li>
+               </ul>
+               <p><strong>Methods to use:</strong> <code>.append()</code> or <code>.appendTo()</code></p>
+            </div>
+
+            <button type="button" id="AddListItem">Add List Item</button>
+            <button type="button" class="check-work" data-problem="4">Check Problem 4</button>
+         </section>
+
+         <!-- Problem 5 Section -->
+         <section class="problem-section" data-problem="5">
+            <h2>Problem 5: Event Delegation Challenge
+               <span class="difficulty advanced">Advanced</span>
+               <span class="time-estimate">~10 minutes</span>
+            </h2>
+
+            <div class="problem-description">
+               <p><strong>Goal:</strong> Make the red-toggle feature work on dynamically added list items.</p>
+               <p><strong>The Challenge:</strong> After adding new list items in Problem 4, try clicking them. Do they
+                  turn red like the original items?</p>
+               <p><strong>Requirements:</strong></p>
+               <ul>
+                  <li>Ensure ALL list items (original AND new) can toggle red color</li>
+                  <li>Research and implement event delegation</li>
+                  <li>Use <code>$(document).on()</code> method</li>
+               </ul>
+               <p><strong>Think About:</strong> Why don't dynamically added elements respond to click events?</p>
+            </div>
+
+            <div class="explanation-box">
+               <h4>💡 Learning Moment</h4>
+               <p>This problem demonstrates a key concept in dynamic web development.
+                  Events are only attached to elements that exist when the page loads.
+                  New elements added later don't automatically inherit these event handlers.</p>
+            </div>
+            <button type="button" class="check-work" data-problem="5">Check Problem 5</button>
+         </section>
+
+         <!-- Bonus Challenges -->
+         <section class="problem-section bonus" data-problem="bonus">
+            <h2>🏆 Bonus Challenges
+               <span class="difficulty advanced">Advanced</span>
+               <span class="time-estimate">~15 minutes</span>
+            </h2>
+
+            <div class="problem-description">
+               <h3>Challenge A: Form Interaction</h3>
+               <p>Add functionality to the form below:</p>
+               <div id="formChallenge">
+                  <input type="text" id="userInput" placeholder="Enter some text...">
+                  <button type="button" id="addCustomItem">Add Custom List Item</button>
+                  <button type="button" id="clearInput">Clear Input</button>
+               </div>
+
+               <h3>Challenge B: Image Gallery</h3>
+               <p>Create a simple image switcher:</p>
+               <div id="imageGallery">
+                  <img id="galleryImage" src="https://via.placeholder.com/300x200/4CAF50/white?text=Image+1"
+                     alt="Gallery Image">
+                  <div id="imageControls">
+                     <button type="button" id="prevImage">Previous</button>
+                     <button type="button" id="nextImage">Next</button>
+                  </div>
+               </div>
+
+               <h3>Challenge C: Accordion Menu</h3>
+               <div id="accordion">
+                  <div class="accordion-item">
+                     <h4 class="accordion-header">Section 1</h4>
+                     <div class="accordion-content">Content for section 1 goes here.</div>
+                  </div>
+                  <div class="accordion-item">
+                     <h4 class="accordion-header">Section 2</h4>
+                     <div class="accordion-content">Content for section 2 goes here.</div>
+                  </div>
+                  <div class="accordion-item">
+                     <h4 class="accordion-header">Section 3</h4>
+                     <div class="accordion-content">Content for section 3 goes here.</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </div>
+
+      <!-- Console Output for Debugging -->
+      <div id="consoleOutput">
+         <h3>Debug Console <button type="button" id="clearConsole">Clear</button></h3>
+         <div id="consoleContent"></div>
+      </div>
+
+   </div>
+
+   <!-- Success Modal -->
+   <div id="successModal" class="modal">
+      <div class="modal-content">
+         <span class="close">&times;</span>
+         <h2>🎉 Congratulations!</h2>
+         <p id="successMessage"></p>
+      </div>
+   </div>
+
+</body>
+
+</html>
