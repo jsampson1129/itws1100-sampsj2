@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $.ajax({
-    url: '../projects.json',
+    url: '/iit/projects.json',
     dataType: 'json',
     success: function (data) {
       $('#loading').fadeOut(500);
