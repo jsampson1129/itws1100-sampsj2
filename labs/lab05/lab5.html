@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 - Form Validation | Jack Sampson</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    input:focus, textarea:focus {
+      background-color: #fee;
+      outline: none;
+    }
+  </style>
+</head>
+<body onload="document.getElementById('firstName').focus()">
+
+  <main>
+    <h1>Contact Form</h1>
+    <h2>Jack Sampson</h2>
+
+    <form name="contactForm" onsubmit="return validateForm()" novalidate>
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" 
+                  onfocus="clearComments(this)" 
+                  onblur="restoreComments(this)">Please enter your comments</textarea>
+
+        <input type="submit" value="Submit Form">
+      </fieldset>
+    </form>
+
+    <button onclick="showName()">Show Name & Nickname</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
