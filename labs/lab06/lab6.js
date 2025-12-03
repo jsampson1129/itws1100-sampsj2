@@ -90,26 +90,20 @@ $(document).ready(function () {
     //
     // 🏁 STARTER TEMPLATES:
     
-    $('#hideText').click(function(e) {
-        e.preventDefault(); $("#textContent p").hide(2000);
-        
-        logToConsole('Hide text clicked - implement fade out animation!', 'info');
-    });
-    
-    $('#showText').click(function(e) {
-        e.preventDefault();
-    $("#textContent p").show(3300);
-        
-        logToConsole('Show text clicked - implement fade in animation!', 'info');
-    });
-    
-    $('#toggleText').click(function(e) {
-        e.preventDefault();
-        $("#textContent p").toggle(1500);
-        
-        logToConsole('Toggle text clicked - implement toggle functionality!', 'info');
-    });
+    $("#hideText").on("click", function (e) {
+    e.preventDefault();                
+    $("#textContent p").hide(2000);
+  });
 
+  $("#showText").on("click", function (e) {
+    e.preventDefault();
+    $("#textContent p").show(3300);
+  });
+
+  $("#toggleText").on("click", function (e) {
+    e.preventDefault();
+    $("#textContent p").toggle(1500);
+  });
 
     
     // ============================================
@@ -156,13 +150,12 @@ $(document).ready(function () {
     //    - Increment listItemCounter after each addition: listItemCounter++
     //
     // 🏁 STARTER TEMPLATE:
-    $("#AddListItem").on("click", function () {
+let itemCount = 5;  
+  $("#AddListItem").on("click", function () {      
     itemCount++;
     const newItem = `<li>New item ${itemCount} - Click me!</li>`;
     $("#labList").append(newItem);
-        
-        logToConsole('Add list item clicked - implement dynamic list item creation!', 'info');
-    });
+  });
 
 
     
@@ -194,6 +187,5 @@ $(document).ready(function () {
     // Research $(document).on() syntax for event delegation
 $(document).on("click", "#labList li", function () {
     $(this).toggleClass("red");
-  
-
-}); // End of $(document).ready()
+  });
+; // End of $(document).ready()
