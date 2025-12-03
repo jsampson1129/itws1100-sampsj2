@@ -1,0 +1,682 @@
+/**
+ * Enhanced Lab 6 CSS File
+ *
+ * @format
+ */
+
+/* Base Styling */
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+   background-color: #f5f5f5;
+}
+
+#bodyBlock {
+   max-width: 900px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Tracker Styling */
+#progressTracker {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   color: white;
+   padding: 20px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+}
+
+#progressTracker h2 {
+   margin: 0 0 15px 0;
+   text-align: center;
+}
+
+.progress-container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.progress-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 8px;
+   min-width: 120px;
+   transition: all 0.3s ease;
+}
+
+.progress-item.completed {
+   background: rgba(76, 175, 80, 0.3);
+}
+
+.progress-number {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+.progress-text {
+   font-size: 12px;
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+.progress-status {
+   font-size: 20px;
+}
+
+/* Help Section */
+#helpSection {
+   background-color: #e3f2fd;
+   border: 2px solid #2196f3;
+   border-radius: 8px;
+   padding: 15px;
+   margin-bottom: 30px;
+}
+
+#toggleHelp {
+   background-color: #2196f3;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   transition: background-color 0.3s;
+}
+
+#toggleHelp:hover {
+   background-color: #1976d2;
+}
+
+#helpContent {
+   margin-top: 15px;
+   padding-top: 15px;
+   border-top: 1px solid #2196f3;
+}
+
+#helpContent h3 {
+   color: #1976d2;
+   margin-top: 0;
+}
+
+#helpContent code {
+   background-color: #f5f5f5;
+   padding: 2px 6px;
+   border-radius: 3px;
+   font-family: "Courier New", monospace;
+   color: #d32f2f;
+}
+
+#helpContent ul {
+   margin: 10px 0;
+}
+
+#helpContent li {
+   margin: 8px 0;
+}
+
+/* Problem Section Styling */
+.problem-section {
+   border: 2px solid #ddd;
+   border-radius: 10px;
+   padding: 25px;
+   margin-bottom: 30px;
+   background-color: #fafafa;
+   transition: all 0.3s ease;
+}
+
+.problem-section:hover {
+   border-color: #4caf50;
+   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.1);
+}
+
+.problem-section.completed {
+   border-color: #4caf50;
+   background-color: #f1f8e9;
+}
+
+.problem-section.bonus {
+   border-color: #ff9800;
+   background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
+.problem-section h2 {
+   color: #333;
+   margin-top: 0;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.difficulty {
+   padding: 4px 12px;
+   border-radius: 20px;
+   font-size: 12px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.difficulty.beginner {
+   background-color: #4caf50;
+   color: white;
+}
+
+.difficulty.intermediate {
+   background-color: #ff9800;
+   color: white;
+}
+
+.difficulty.advanced {
+   background-color: #f44336;
+   color: white;
+}
+
+.time-estimate {
+   background-color: #2196f3;
+   color: white;
+   padding: 4px 8px;
+   border-radius: 15px;
+   font-size: 11px;
+}
+
+.problem-description {
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   border-left: 4px solid #4caf50;
+   margin-bottom: 20px;
+}
+
+.problem-description h4 {
+   margin-top: 0;
+   color: #4caf50;
+}
+
+.problem-description ul {
+   margin: 10px 0;
+   padding-left: 25px;
+}
+
+.problem-description li {
+   margin: 8px 0;
+}
+
+/* Explanation Box */
+.explanation-box {
+   background: linear-gradient(135deg, #fff9c4 0%, #f0c419 100%);
+   border: 2px solid #f57f17;
+   border-radius: 8px;
+   padding: 15px;
+   margin: 15px 0;
+}
+
+.explanation-box h4 {
+   margin: 0 0 10px 0;
+   color: #f57f17;
+}
+
+/* Button Styling */
+button {
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+   transition: all 0.3s ease;
+   margin: 5px;
+}
+
+button:hover {
+   background-color: #45a049;
+   transform: translateY(-2px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+   transform: translateY(0);
+}
+
+.check-work {
+   background-color: #2196f3;
+}
+
+.check-work:hover {
+   background-color: #1976d2;
+}
+
+/* Specific Element Styling */
+#nameHeading {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   color: white;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   margin: 20px 0;
+}
+
+#nameHeading:hover {
+   transform: scale(1.02);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.myName {
+   font-style: normal;
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+/* Show/Hide Block */
+#showHideBlock {
+   padding: 20px;
+   border: 2px solid #2196f3;
+   border-radius: 8px;
+   margin: 20px 0;
+   background-color: white;
+}
+
+#showHideLinks {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+#showHideLinks a {
+   color: #2196f3;
+   text-decoration: none;
+   padding: 8px 16px;
+   margin: 0 5px;
+   border: 2px solid #2196f3;
+   border-radius: 20px;
+   transition: all 0.3s ease;
+   display: inline-block;
+}
+
+#showHideLinks a:hover {
+   background-color: #2196f3;
+   color: white;
+}
+
+#toggleText {
+   float: right;
+   background-color: #ff9800;
+   border-color: #ff9800;
+   color: white;
+}
+
+#toggleText:hover {
+   background-color: #f57f17;
+   border-color: #f57f17;
+}
+
+#textContent p {
+   margin: 15px 0;
+   text-align: justify;
+   line-height: 1.8;
+}
+
+/* List Styling */
+#labList {
+   list-style: none;
+   padding: 0;
+   margin: 20px 0;
+}
+
+#labList li {
+   background-color: white;
+   border: 2px solid #ddd;
+   border-radius: 8px;
+   padding: 15px;
+   margin: 10px 0;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   position: relative;
+}
+
+#labList li:hover {
+   border-color: #4caf50;
+   transform: translateX(5px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#labList li::before {
+   content: "👆";
+   position: absolute;
+   right: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+#labList li:hover::before {
+   opacity: 1;
+}
+
+.red {
+   background-color: #ffebee !important;
+   border-color: #f44336 !important;
+   color: #d32f2f !important;
+   font-weight: bold;
+}
+
+.red::before {
+   content: "🔴" !important;
+   opacity: 1 !important;
+}
+
+/* Form Challenge */
+#formChallenge {
+   display: flex;
+   gap: 10px;
+   margin: 15px 0;
+   flex-wrap: wrap;
+}
+
+#userInput {
+   flex: 1;
+   min-width: 200px;
+   padding: 12px;
+   border: 2px solid #ddd;
+   border-radius: 6px;
+   font-size: 14px;
+}
+
+#userInput:focus {
+   border-color: #4caf50;
+   outline: none;
+}
+
+/* Image Gallery */
+#imageGallery {
+   text-align: center;
+   margin: 20px 0;
+}
+
+#galleryImage {
+   max-width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 8px;
+   border: 3px solid #ddd;
+   transition: all 0.3s ease;
+}
+
+#imageControls {
+   margin-top: 15px;
+}
+
+/* Accordion */
+#accordion {
+   margin: 20px 0;
+}
+
+.accordion-item {
+   border: 2px solid #ddd;
+   border-radius: 8px;
+   margin-bottom: 5px;
+   overflow: hidden;
+}
+
+.accordion-header {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   color: white;
+   padding: 15px 20px;
+   margin: 0;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+   background: linear-gradient(135deg, #5a67d8 0%, #6b4696 100%);
+}
+
+.accordion-content {
+   padding: 20px;
+   background-color: white;
+   display: none;
+}
+
+.accordion-content.active {
+   display: block;
+}
+
+/* Console Output */
+#consoleOutput {
+   background-color: #1e1e1e;
+   color: #00ff00;
+   border-radius: 8px;
+   padding: 20px;
+   margin-top: 30px;
+   font-family: "Courier New", monospace;
+   min-height: 100px;
+   max-height: 300px;
+   overflow-y: auto;
+}
+
+#consoleOutput h3 {
+   color: #ffffff;
+   margin: 0 0 15px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#clearConsole {
+   background-color: #f44336;
+   padding: 5px 10px;
+   font-size: 12px;
+}
+
+#consoleContent {
+   font-size: 13px;
+   line-height: 1.4;
+}
+
+.console-message {
+   margin: 5px 0;
+   padding: 5px 0;
+   border-bottom: 1px solid #333;
+}
+
+.console-success {
+   color: #4caf50;
+}
+
+.console-error {
+   color: #f44336;
+}
+
+.console-info {
+   color: #2196f3;
+}
+
+/* Modal Styling */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1000;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.modal-content {
+   background-color: white;
+   margin: 15% auto;
+   padding: 30px;
+   border-radius: 10px;
+   width: 80%;
+   max-width: 500px;
+   text-align: center;
+   position: relative;
+   animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+   from {
+      transform: translateY(-50px);
+      opacity: 0;
+   }
+   to {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   position: absolute;
+   right: 15px;
+   top: 15px;
+   cursor: pointer;
+}
+
+.close:hover {
+   color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   #bodyBlock {
+      margin: 10px;
+      padding: 15px;
+   }
+
+   .progress-container {
+      flex-direction: column;
+   }
+
+   .progress-item {
+      min-width: auto;
+   }
+
+   .problem-section {
+      padding: 15px;
+   }
+
+   .problem-section h2 {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   #formChallenge {
+      flex-direction: column;
+   }
+
+   #userInput {
+      min-width: auto;
+   }
+
+   .requirements-grid {
+      flex-direction: column;
+   }
+
+   .requirement-box {
+      margin-bottom: 15px;
+   }
+}
+
+/* ============================================ */
+/* SUBMISSION REQUIREMENTS STYLING */
+/* ============================================ */
+
+#submissionRequirements {
+   background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+   border: 3px solid #ff6b6b;
+   border-radius: 10px;
+   padding: 25px;
+   margin-bottom: 30px;
+   color: #2c3e50;
+}
+
+#submissionRequirements h2 {
+   color: #e74c3c;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 1.5em;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.requirements-grid {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.requirement-box {
+   flex: 1;
+   min-width: 250px;
+   background: rgba(255, 255, 255, 0.9);
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.requirement-box h3 {
+   margin-top: 0;
+   margin-bottom: 15px;
+   color: #2c3e50;
+}
+
+.requirement-box.git h3 {
+   color: #f39c12;
+}
+
+.requirement-box.deploy h3 {
+   color: #3498db;
+}
+
+.requirement-box.submit h3 {
+   color: #27ae60;
+}
+
+.requirement-box ol,
+.requirement-box ul {
+   margin: 0;
+   padding-left: 20px;
+}
+
+.requirement-box li {
+   margin-bottom: 5px;
+   line-height: 1.4;
+}
+
+.requirement-box code {
+   background: #f8f8f8;
+   padding: 2px 4px;
+   border-radius: 3px;
+   font-family: "Courier New", monospace;
+   font-size: 0.9em;
+   color: #e74c3c;
+}
