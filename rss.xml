@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="rss.css"?>
+<rss version="2.0">
+  <channel>
+    <title>Jack Sampson's ITWS Labs</title>
+    <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/</link>
+    <description>Lab assignments and projects from Intro to ITWS – RPI</description>
+    <language>en-us</language>
+    <pubDate>Mon, 02 Dec 2025 12:00:00 EST</pubDate>
+    <lastBuildDate>Mon, 02 Dec 2025 12:00:00 EST</lastBuildDate>
+
+    <!-- ITEM 1 – Lab 1 / Home Page -->
+    <item>
+      <title>Lab 1 – Personal Website &amp; Branding</title>
+      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/index.html</link>
+      <description>My personal introduction and branding page for ITWS.</description>
+      <pubDate>Wed, 11 Sep 2025 00:00:00 EST</pubDate>
+      <guid>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/index.html</guid>
+    </item>
+
+    <!-- ITEM 2 – Lab 2 Resume -->
+    <item>
+      <title>Lab 2 – Professional Resume Website</title>
+      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab02-resume/index.html</link>
+      <description>Interactive resume built with HTML and CSS.</description>
+      <pubDate>Mon, 23 Sep 2025 00:00:00 EST</pubDate>
+      <guid>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab02-resume/index.html</guid>
+    </item>
+
+    <!-- ITEM 3 – Lab 3 Information Architecture -->
+    <item>
+      <title>Lab 3 – Site Structure &amp; Information Architecture</title>
+      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/index.html</link>
+      <description>Multi-page site with proper navigation and IA.</description>
+      <pubDate>Mon, 14 Oct 2025 00:00:00 EST</pubDate>
+      <guid>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/index.html</guid>
+    </item>
+
+    <!-- ITEM 4 – Lab 4 RSS Feed -->
+    <item>
+      <title>Lab 4 – XML &amp; RSS Feed</title>
+      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab4/index.html</link>
+      <description>Created and styled a valid RSS 2.0 feed.</description>
+      <pubDate>Mon, 02 Dec 2025 00:00:00 EST</pubDate>
+      <guid>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab4/index.html</guid>
+    </item>
+
+  </channel>
+</rss>
