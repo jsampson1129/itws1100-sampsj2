@@ -21,7 +21,7 @@
     <!-- ITEM 2 – Lab 2 Resume -->
     <item>
       <title>Lab 2 – Professional Resume Website</title>
-      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab02-resume/index.html</link>
+      <link>http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab02/sampsj2-JackSampson-resume.html</link>
       <description>Interactive resume built with HTML and CSS.</description>
       <pubDate>Mon, 23 Sep 2025 00:00:00 EST</pubDate>
       <guid>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab02-resume/index.html</guid>
@@ -30,7 +30,7 @@
     <!-- ITEM 3 – Lab 3 Information Architecture -->
     <item>
       <title>Lab 3 – Site Structure &amp; Information Architecture</title>
-      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/index.html</link>
+      <link>https://sampsj2rpi.eastus.cloudapp.azure.com/iit</link>
       <description>Multi-page site with proper navigation and IA.</description>
       <pubDate>Mon, 14 Oct 2025 00:00:00 EST</pubDate>
       <guid>https://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/index.html</guid>
