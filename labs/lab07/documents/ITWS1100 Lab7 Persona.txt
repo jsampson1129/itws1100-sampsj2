@@ -1,0 +1,63 @@
+ITWS1100 Lab7 Persona
+
+Persona 1: Cathy Smith – Pet Shelter Owner
+Age: 47
+Occupation: Owner of “Paw Haven Shelter”
+Tech Comfort Level: Moderate (uses social media but not very technical)
+
+Q1: Why did you decide to use Pet Finder?
+
+“We were struggling to keep our website up to date with new animals. Pet Finder made it easy to upload pet info and photos quickly, so adopters can see who’s available without calling us every day.”
+
+Q2: What features do you find most useful?
+
+“I love that I can edit the pets’ details from a single page, and everything updates instantly. The appointment scheduling feature is also a game-changer, it saves us from managing endless phone calls.”
+
+
+Persona 2: Jay Quinn – Returning Pet Owner
+
+Age: 29
+Occupation: Graphic Designer
+Tech Comfort Level: High
+
+Q1: Why did you decide to use Pet Finder?
+
+“I adopted my first cat last year, and I wanted to find her a companion. I liked that Pet Finder made browsing simple — no ads, just clear info about the pets.”
+
+Q2: What did you like about the website/app?
+
+“It’s clean and easy to navigate. The filters helped me find cats around the same age and temperament as my current one. I also liked reading their favorite activities, it made them feel more ‘unique.’”
+
+
+Persona 3: Luis Rivera – First-Time Adopter
+
+Age: 22
+Occupation: College Student
+Tech Comfort Level: Very High
+
+Q1: Why did you decide to use Pet Finder?
+
+“I’ve always wanted a dog, but other adoption sites were kind of overwhelming. Pet Finder looked simple and welcoming, and it helped me learn more about what kind of dog would fit my lifestyle.”
+
+Q2: What did you like about the site?
+
+“Each pet’s profile had exactly what I needed — age, behavior, diet — without walls of text. The quick contact form made it easy to reach out without creating an account.”
+
+Q3: What could be improved?
+
+“Maybe a short quiz to match me with pets that fit my personality or living space.”
+
+
+Persona 4: Amira Patel – Volunteer & Animal Advocate
+
+Age: 34
+Occupation: Veterinary Technician
+Tech Comfort Level: Moderate
+
+Q1: Why did you decide to use Pet Finder?
+
+“Our local shelter didn’t have a good way to list animals online. Pet Finder helped us get them seen by more people.”
+
+Q2: What did you like about the website/app?
+
+“I can upload a pet’s health and vaccination info easily, and adopters see it right away. It’s clear and organized, unlike some big platforms.”

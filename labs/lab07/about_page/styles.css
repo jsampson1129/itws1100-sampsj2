@@ -1,0 +1,28 @@
+/* These styles ONLY apply to about/index.html */
+
+.about-content .hero {
+    background-color: #fffbef;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.about-text {
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    line-height: 1.8;
+}
+
+.about-text h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 15px;
+}

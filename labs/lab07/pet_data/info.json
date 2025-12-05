@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Buddy",
+    "type": "Dog",
+    "age": "2 years",
+    "gender": "Male",
+    "image": "https://placehold.co/300x250/E8D4A9/8D7B68?text=Buddy"
+  },
+  {
+    "id": 2,
+    "name": "Whiskers",
+    "type": "Cat",
+    "age": "1 year",
+    "gender": "Female",
+    "image": "https://placehold.co/300x250/A9A9A9/5E5E5E?text=Whiskers"
+  },
+  {
+    "id": 3,
+    "name": "Rocky",
+    "type": "Dog",
+    "age": "4 years",
+    "gender": "Male",
+    "image": "https://placehold.co/300x250/B5B5B5/6C6C6C?text=Rocky"
+  },
+  {
+    "id": 4,
+    "name": "Mittens",
+    "type": "Cat",
+    "age": "3 years",
+    "gender": "Female",
+    "image": "https://placehold.co/300x250/D2B48C/8C6D3F?text=Mittens"
+  },
+  {
+    "id": 5,
+    "name": "Max",
+    "type": "Dog",
+    "age": "8 months",
+    "gender": "Male",
+    "image": "https://placehold.co/300x250/C0C0C0/707070?text=Max"
+  },
+  {
+    "id": 6,
+    "name": "Luna",
+    "type": "Cat",
+    "age": "5 years",
+    "gender": "Female",
+    "image": "https://placehold.co/300x250/F5F5DC/BDB76B?text=Luna"
+  },
+  {
+    "id": 7,
+    "name": "Charlie",
+    "type": "Dog",
+    "age": "3 years",
+    "gender": "Male",
+    "image": "https://placehold.co/300x250/DEB887/8B4513?text=Charlie"
+  },
+  {
+    "id": 8,
+    "name": "Daisy",
+    "type": "Dog",
+    "age": "6 years",
+    "gender": "Female",
+    "image": "https://placehold.co/300x250/F0E68C/B8860B?text=Daisy"
+  },
+  {
+    "id": 9,
+    "name": "Smokey",
+    "type": "Cat",
+    "age": "2 years",
+    "gender": "Male",
+    "image": "https://placehold.co/300x250/B2B2B2/696969?text=Smokey"
+  },
+  {
+    "id": 10,
+    "name": "Bella",
+    "type": "Dog",
+    "age": "1 year",
+    "gender": "Female",
+    "image": "https://placehold.co/300x250/E6E6FA/9370DB?text=Bella"
+  }
+]
