@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Finder</title>
+    <!-- Link to global stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Link to this page's exclusive stylesheet -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="site-container">
+        <!-- Header: Contains the logo and navigation -->
+        <header class="site-header">
+            <div class="logo-container">
+                <h1 class="logo-text">Pet Finder</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../search_page/index.html">Search</a></li>
+                    <li><a href="../about_page/index.html">About</a></li>
+                    <li><a href="index.html" class="active">Contact</a></li>
+                    <li><a href="../adopt_page/index.html" class="nav-button">Adopt Now</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content contact-content">
+            <section class="hero">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you.</p>
+            </section>
+            
+            <section class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>&copy; 2025 Pet Finder</p>
+        </footer>
+    </div>
+
+</body>
+</html>
