@@ -39,6 +39,11 @@
       "title": "Lab 9 – SQL",
       "url": "http://sampsj2rpi.eastus.cloudapp.azure.com/iit/labs/lab09/inclassexample/movies.php",
       "description": "Movies and Actors SQL"
+    },
+    {
+      "title": "Lab 10 – Production Deployment",
+      "url": "https://sampsj2rpi.eastus.cloudapp.azure.com/iit/",
+      "description": "Moved site to root FQDN with selective security"
     }
   ]
 }
