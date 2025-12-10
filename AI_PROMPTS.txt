@@ -1,0 +1,8 @@
+“After a successful comment insert with prepared statements, show a green success message saying ‘Thank you! Your comment is awaiting approval.’ and clear the POST data so the form doesn’t resubmit on refresh.”
+Grok provided simple code in response to this which was able to work on its first try without needing significant editing.
+
+“Using mysqli and prepared statements in PHP, write code that safely inserts visitor_name, email, comment, and optional feature_suggestion from $_POST into the siteComments table. Bind parameters properly and handle the optional field correctly.”
+Grok provided mostly-working code in response to this, though I needed to change the origin of the .php files that it was trying to pull from, as Grok's pathing initially did not point to the right location for the file, causing errors (HTTP 500) to fire when the code was ran.
+
+“Give me clean, modern CSS for a comment form and comment display: max-width container, styled inputs/textareas, comment boxes with light background and padding, blue submit button that darkens on hover.”
+Grok was able to easily provide this simple code for the design of the comment form page, without need for substantial modification, which I used so that I could spend more time focusing on the proper code rather than the appearance of the page.
