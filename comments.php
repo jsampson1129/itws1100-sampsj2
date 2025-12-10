@@ -1,7 +1,6 @@
 <?php
-// includes/config.inc.php must define DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME = 'mySite'
-require_once 'includes/config.inc.php';
-require_once 'includes/head.inc.php';
+require_once 'labs/lab9/inclassexample/includes/config.inc.php';
+require_once 'labs/lab9/inclassexample/includes/head.inc.php';
 ?>
 
 <h1>Welcome to Jack Sampson's ITWS Portfolio</h1>
