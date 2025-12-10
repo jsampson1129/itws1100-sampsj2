@@ -7,7 +7,7 @@
 // Localhost development settings
 if ($_SERVER["HTTP_HOST"] == 'localhost' || $_SERVER["HTTP_HOST"] == 'localhost:8080') {
    $GLOBALS['HOSTNAME'] = 'localhost';
-   $GLOBALS['DB_NAME']  = 'iit';
+   $GLOBALS['DB_NAME']  = 'mySite';
    $GLOBALS['DB_HOST']  = 'localhost';
    $GLOBALS['DB_USERNAME'] = 'root';
    $GLOBALS['DB_PASSWORD'] = 'root';
@@ -16,7 +16,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost' || $_SERVER["HTTP_HOST"] == 'localhost:
    // NOTE: Update these credentials for your production environment
    // For security, consider using environment variables instead
    $GLOBALS['HOSTNAME'] = 'localhost';
-   $GLOBALS['DB_NAME']  = 'iit';
+   $GLOBALS['DB_NAME']  = 'mySite';
    $GLOBALS['DB_HOST']  = 'localhost';
    $GLOBALS['DB_USERNAME'] = 'sampsj2';
    $GLOBALS['DB_PASSWORD'] = 'heartGrzyM7'; // CHANGE THIS IN PRODUCTION
