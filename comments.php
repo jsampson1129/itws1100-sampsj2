@@ -1,6 +1,6 @@
 <?php
-require_once 'includes/config.inc.php';
-require_once 'includes/head.inc.php';
+require_once 'iit/labs/lab09/inclassexample/includes/config.inc.php';
+require_once 'iit/labs/lab09/inclassexample/includes/head.inc.php';
 ?>
 
 <h1>Welcome to My ITWS Portfolio</h1>
